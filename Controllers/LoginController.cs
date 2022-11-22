@@ -6,6 +6,11 @@ namespace AklasWeb.Controllers
     {
         public IActionResult Index()
         {
+            return View("Librarian");
+        }
+
+        public IActionResult Librarian()
+        {
             return View();
         }
     }
