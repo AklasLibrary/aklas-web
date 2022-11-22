@@ -13,5 +13,10 @@ namespace AklasWeb.Controllers
         {
             return View();
         }
+
+        public IActionResult Admin()
+        {
+            return View();
+        }
     }
 }
