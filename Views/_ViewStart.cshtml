@@ -1,3 +1,6 @@
 ﻿@{
-    Layout = "_Layout";
+    if (Context.Request.Path.StartsWithSegments("/Dashboard", StringComparison.OrdinalIgnoreCase))
+        Layout = "_LayoutDashboard";
+    else 
+        Layout = "_Layout";
 }
