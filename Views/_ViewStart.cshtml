@@ -1,3 +1,8 @@
 ﻿@{
-    Layout = "_Layout";
+    if (Context.Request.Path.StartsWithSegments("/Admin", StringComparison.OrdinalIgnoreCase))
+        Layout = "_LayoutAdmin";
+    else if (Context.Request.Path.StartsWithSegments("/Librarian", StringComparison.OrdinalIgnoreCase))
+        Layout = "_LayoutLibrarian";
+    else 
+        Layout = "_Layout";
 }
